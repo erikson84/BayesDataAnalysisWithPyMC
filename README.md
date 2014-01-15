@@ -49,7 +49,7 @@ favorite browser. Did I mention it is free?
 So, as a exercise in bayesian statistics and in Python programming, I adapted some models used by Krushcke 
 in his book to Python, using PyMC (and Numpy and Matplotlib). This is just a first attempt, and I have only 
 "translated" Krushcke's model to Python - and in a very non-pythonic way. There's plenty of room for improvement, 
-but the code shouldn't break if the data is entered correctly. The code is also heavily commented - after what, 
+but the code shouldn't break if the data is entered correctly. The code is also heavily commented - after all, 
 the point here is to exercise the concepts and programming skills.
 
 Feel free to fork and modify and pull request - all suggestions are welcome!
