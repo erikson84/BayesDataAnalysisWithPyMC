@@ -1,7 +1,5 @@
-Bayesian Data Analysis
+Bayesian Data Analysis *with PyMC*
 ======================
-*with PyMC*
------------
 
 ###For those in a hurry
 
@@ -16,13 +14,13 @@ by John K. Krushcke.
 - Oneway ANOVA.
 
 ###Quick References
->1. "Doing Bayesian Data Analysis", by John K. Krushcke
+>1. "Doing Bayesian Data Analysis", by John K. Krushcke   
 >[http://doingbayesiandataanalysis.blogspot.com.br/](http://doingbayesiandataanalysis.blogspot.com.br/)
 >
->2. "Probabilistic Programming and Bayesian Methods for Hackers", by Cam Davidson-Pilon
+>2. "Probabilistic Programming and Bayesian Methods for Hackers", by Cam Davidson-Pilon   
 >[https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
 >
->3. "PyMC", by Christopher Fonnesbeck, Anand Patil and David Huard
+>3. "PyMC", by Christopher Fonnesbeck, Anand Patil and David Huard   
 >[http://pymc-devs.github.io/pymc/](http://pymc-devs.github.io/pymc/)
 
 
@@ -44,7 +42,7 @@ But I had problems with R syntax. It's so clumsy, and weird and... Well, I don't
 but I really prefer Python.
 
 Being a Python fan, I had to find a way to adapt the original code. It was made possible after I discovered
-PyMC in Cam Davidson-Pilos "Probabilistic Programming and Bayesian Methods for Hackers". Also a great book, with a 
+PyMC in Cam Davidson-Pilon "Probabilistic Programming and Bayesian Methods for Hackers". Also a great book, with a 
 original media: IPython Notebooks - you read the book, you read (and edit!) the code and run it all in your 
 favorite browser. Did I mention it is free?
 
