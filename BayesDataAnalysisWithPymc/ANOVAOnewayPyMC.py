@@ -13,13 +13,20 @@ from matplotlib import pyplot as plot
 from plot_post import plot_post
 from normalize import *
 from math import ceil
+from os import path
+
+# Code to find the data path.
+
+scr_dir = path.dirname(__file__)
+file_name = 'McDonaldSK1991data.txt'
+comp_dir = path.join(scr_dir, 'Data', file_name)
 
 # Using data from the book for easier comparison.
 # Data from McDonald (1991) study about geographical location and muscle size
 # in mussels.
 # Again we use Numpy to assign the data to variables.
 
-x, y = np.genfromtxt('./Data/McDonaldSK1991data.txt', delimiter=' ',
+x, y = np.genfromtxt(comp_dir, delimiter=' ',
                      skip_header=19, usecols=(0, 1), unpack=True)
 
 # Define the contrasts.

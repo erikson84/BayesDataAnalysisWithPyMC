@@ -14,11 +14,18 @@ from matplotlib import pyplot as plot
 from plot_post import plot_post
 from normalize import (normalize, convert_intercept,
                        convert_slope, convert_tau_sigma)
+from os import path
+
+# Code to find the data path.
+
+scr_dir = path.dirname(__file__)
+file_name = 'McIntyre1994data.csv'
+comp_dir = path.join(scr_dir, 'Data', file_name)
 
 # So, let's be lazy: the data are from McIntyre cigarette weight.
 # Use numpy to load the data we want directly in the appropriate variables.
 
-y, x = np.genfromtxt('./Data/McIntyre1994data.csv', delimiter=',',
+y, x = np.genfromtxt(comp_dir, delimiter=',',
                      skip_header=1, usecols=(1, 3), unpack=True)
 
 # Let's try normalizing, as suggested by Krushcke.
