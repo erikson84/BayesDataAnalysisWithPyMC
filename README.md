@@ -42,9 +42,9 @@ But I had problems with R syntax. It's so clumsy, and weird and... Well, I don't
 but I really prefer Python.
 
 Being a Python fan, I had to find a way to adapt the original code. It was made possible after I discovered
-PyMC in Cam Davidson-Pilon "Probabilistic Programming and Bayesian Methods for Hackers". Also a great book, with a 
-original media: IPython Notebooks - you read the book, you read (and edit!) the code and run it all in your 
-favorite browser. Did I mention it is free?
+PyMC in Cam Davidson-Pilon "Probabilistic Programming and Bayesian Methods for Hackers". Also a great book, 
+published in an original media: IPython Notebooks - you read the book, you read (and edit!) the code and run 
+it all in your favorite browser. Did I mention it is free?
 
 So, as a exercise in bayesian statistics and in Python programming, I adapted some models used by Krushcke 
 in his book to Python, using PyMC (and Numpy and Matplotlib). This is just a first attempt, and I have only 
