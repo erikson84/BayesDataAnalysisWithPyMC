@@ -11,7 +11,8 @@ import pymc
 import numpy as np
 from matplotlib import pyplot as plot
 from plot_post import plot_post
-from normalize import *
+from normalize import (normalize, convert_baseline, convert_deflection,
+                       convert_sigma)
 from math import ceil
 from os import path
 
@@ -111,19 +112,9 @@ a_sd_sample = mcmc.trace('a_sd')[:]
 
 # Convert the values.
 
-#m_sample = a0_sample.repeat(x_levels).reshape(len(a0_sample), x_levels) + a_sample
-
-#b0_sample = m_sample.mean(axis=1)
 b0_sample = convert_baseline(a0_sample, a_sample, x_levels, y)
-
-#b_sample = (m_sample - b0_sample.repeat(x_levels).reshape(len(b0_sample), x_levels))
 b_sample = convert_deflection(a0_sample, a_sample, x_levels, y)
 
-#b0_sample = b0_sample * y_sd + y_mean
-#b_sample = b_sample * y_sd
-
-#sig_sample = sigma_sample * y_sd
-#b_sd_sample = a_sd_sample * y_sd
 sig_sample = convert_sigma(y, sigma_sample)
 b_sd_sample = convert_sigma(y, a_sd_sample)
 
